@@ -1,31 +1,57 @@
-import logo from "./logo.svg";
-import "./App.css";
-import Hello from "./Hello";
-
-function App() {
+//sfc befehl eingeben ist wie doctype in react müssen wir classNameName für className sagen
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        
-        <Hello />
-        <Hello />
-        <Hello />
+    <div className="wrapper">
+      {
+        {
+          /**komponente Titel erstellen */
+        }
+      }
+      <h1>Hunde & Katzen</h1>
+      <div className="animal">
+        <div className="animal_image">
+          <img
+            className="entry"
+            src="https://via.placeholder.com/300"
+            alt="animal"
+          />
+        </div>
 
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className="animal_title">
+          <h2 className="entry">Enrico</h2>
+        </div>
+
+        <div className="animal_body">
+          <div>
+            <span className="label">Tierart:</span>
+            <span className="entry">Hund</span>
+          </div>
+
+          <div>
+            <span className="label">Geschlecht:</span>
+            <span className="entry">männlich</span>
+          </div>
+
+          <div>
+            <span className="label">Rasse:</span>
+            <span className="entry">Laika</span>
+          </div>
+
+          <div>
+            <span className="label">Alter:</span>
+            <span className="entry">12 Jahre</span>
+          </div>
+        </div>
+      </div>
+
+      <div className="controls">
+        <button id="pre" disabled>
+          zurück
+        </button>
+        <button id="next">vor</button>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
