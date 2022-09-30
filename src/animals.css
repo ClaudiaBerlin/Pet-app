@@ -177,3 +177,10 @@ button:focus {
   background: rgba(219, 26, 32, 0.4);
   cursor: not-allowed;
 }
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}

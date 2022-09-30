@@ -6,7 +6,7 @@ const  Hello = (props) => {
     return (
         <div>
         {/* <h1>Hallo Welt</h1> ; */}
-        {greetings}{props.name}
+        {greeting}{props.name}
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas corrupti nobis pariatur nisi corporis expedita ipsam error molestiae minus eligendi. Dolorem rem officiis nihil adipisci nostrum quisquam exercitationem dolorum blanditiis.</p>
         </div>
     )
@@ -18,4 +18,4 @@ const  Hello = (props) => {
 // exportiert die komponenente
 export default Hello;
 
-// npx create-react-app <name des prokekts>
+// npx create-react-app <name des projekts>
